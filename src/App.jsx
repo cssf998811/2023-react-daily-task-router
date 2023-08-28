@@ -30,6 +30,20 @@ function App() {
           </NavLink>
         </div>
         {/* Routes, Route 練習區 */}
+        <Routes>
+          <Route path="/" element={<Index />} /> 
+          <Route path="/register" element={<Register />} /> 
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/todo" element={<Todo />} /> 
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here, yet.</p>
+              </main>
+            }
+          />
+        </Routes>
         {/* 練習區 */}
       </HashRouter>
     </div>
